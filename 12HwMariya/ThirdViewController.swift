@@ -18,11 +18,9 @@ class ThirdViewController: UIViewController {
         let tagButtons = sender.tag
         result.text = result.text! + String(tagButtons)
         acButton.setTitle("C", for: .normal)
-        
-        
     }
     @IBAction func buttonsAny(_ sender: UIButton) {
-        let tagButtons = (sender as! UIButton).tag
+        let tagButtons = sender.tag
         if tagButtons == 10 {
             result.text = ""
             acButton.setTitle("AC", for: .normal)
